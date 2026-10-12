@@ -18,7 +18,7 @@ function Register(){
       };
       async function submit(){
             try{
-                  const response = await axios.post("http://localhost:8080/students/register",registerUser);
+                  const response = await axios.post("https://sms-ab-backend.onrender.com/students/register",registerUser);
                   alert("User Registered successfully..");
                   navigate("/");
             }catch(err){

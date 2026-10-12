@@ -8,7 +8,7 @@ function Dashboard(){
       async function getAllUsers(){
             const token = localStorage.getItem("token");
             try{
-                  const response = await axios.get("http://localhost:8080/students",{
+                  const response = await axios.get("https://sms-ab-backend.onrender.com/students",{
                         headers:{
                               Authorization:`Bearer ${token}`
                         }
@@ -27,7 +27,7 @@ function Dashboard(){
             };
             const token = localStorage.getItem("token");
             try{
-                  await axios.put(`http://localhost:8080/students/${user.id}`,updatedUser,{
+                  await axios.put(`https://sms-ab-backend.onrender.com/students/${user.id}`,updatedUser,{
                         headers:{
                               Authorization:`Bearer ${token}`
                         }
@@ -41,7 +41,7 @@ function Dashboard(){
       async function deleteUser(id){
             const token = localStorage.getItem("token");
             try{
-                  await axios.delete(`http://localhost:8080/students/${id}`,{
+                  await axios.delete(`https://sms-ab-backend.onrender.com/students/${id}`,{
                         headers:{
                               Authorization:`Bearer ${token}`
                         }

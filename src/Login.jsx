@@ -16,7 +16,7 @@ function Login(){
       };
       async function submit(){
             try{
-                  const response = await axios.post("http://localhost:8080/students/login",loginUser);
+                  const response = await axios.post("https://sms-ab-backend.onrender.com/students/login",loginUser);
 
                   console.log(response.data);
                   localStorage.setItem("token",response.data.token);
