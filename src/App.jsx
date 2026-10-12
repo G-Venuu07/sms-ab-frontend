@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 function App(){
   return(
     <BrowserRouter>
-            <h1>Student management system</h1>
+            <h1>Student Management System</h1>
         <Routes>
           <Route path="/" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
